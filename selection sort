@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int i,j,n,min,swap;
-    printf("enter number of elements:");
+    printf("enter number of elements:\n");
     scanf("%d",&n);
     int array[n];
     printf("enter elements:\n");
@@ -9,7 +9,7 @@ int main(){
     scanf("%d",&array[i]);
     for(i=0;i<n-1;i++)
     {
-        int min=i;
+        min=i;
         for(j=i+1;j<n;j++)
         {
             if(array[j]<array[min])
@@ -17,7 +17,9 @@ int main(){
         }
         if(min!=i)
         {
-            swap(array[i],array[min]);
+            swap=a[i];
+            a[i]=a[min];
+            a[min]=swap;
         }
     }
      printf("sorted array:\n");
